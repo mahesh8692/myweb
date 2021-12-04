@@ -12,9 +12,7 @@ pipeline{
         stage("Maven Build"){
             steps{
                 script{
-                    if(isUnix()){
                         sh 'mvn clean package'
-                    }
                 }
             }
         }
