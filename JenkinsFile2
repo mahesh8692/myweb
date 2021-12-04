@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'maheshgit', url: 'https://github.com/mahesh8692/myweb'
+               echo "git clone"
             }
         }
         stage("Maven Build"){
             steps{
-                        sh 'mvn package'  
+                         echo "mvn builde"
                 }
             }
         }
